@@ -5,7 +5,7 @@ gem 'rails', '3.0.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 gem 'devise', '1.1.rc1'
 gem 'mysql', '2.8.1'
 gem 'mysql2', '0.2.7'

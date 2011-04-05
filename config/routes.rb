@@ -1,4 +1,8 @@
 Saicapellanes::Application.routes.draw do
+  resources :categories
+
+  resources :products
+
   devise_for :users
 
   # The priority is based upon order of creation:
