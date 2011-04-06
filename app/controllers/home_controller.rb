@@ -23,7 +23,7 @@ class HomeController < ApplicationController
   
   def our_invitations
   end
-  
 
-  
+  def register
+  end
 end

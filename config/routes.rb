@@ -12,6 +12,40 @@ Saicapellanes::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
   #match "home/index", :to => "home#index"
+
+  #Saicapellanes routes
+
+  match "home/our_invitations", :to => "home#our_invitations"
+  match "home/register", :to => "home#register"
+  match "home/about_us", :to => "home#about_us"
+  match "home/more_info", :to => "home#more_info"
+  match "home/calendar", :to => "home#calendar"
+  match "home/contact", :to => "home#contact"
+  match "home/gallery", :to => "home#gallery"
+ 
+  match "members/index", :to => "members#index"
+  match "members/about_us", :to => "members#about_us"
+  match "members/what_is_it_about", :to => "members#what_is_it_about"
+  match "members/strategies_for_success", :to => "members#strategies_for_success"
+  match "members/cards", :to => "members#cards"
+  match "members/travels", :to => "members#travels"
+  match "members/insurance", :to => "members#insurance"
+  match "members/logn_distance", :to => "members#logn_distance"
+  match "members/int_driving_license", :to => "members#int_driving_license"
+  match "members/id_credentials", :to => "members#id_credentials"
+  match "members/strips", :to => "members#strips"
+  match "members/make_your_website", :to => "members#make_your_website"
+  match "members/business_promotions", :to => "members#business_promotions"
+  match "members/loyalty_program_merchants", :to => "members#loyalty_program_merchants"
+  match "members/admin_system_nonprofit_orgs", :to => "members#admin_system_nonprofit_orgs"
+  match "members/nonprofit_orgs_register", :to => "members#nonprofit_orgs_register"
+  match "members/partners_business_register", :to => "members#partners_business_register"
+  match "members/loyalty_program_partners", :to => "members#loyalty_program_partners"
+  match "members/incentive_progrma", :to => "members#incentive_progrma"
+
+  # End Saicapellanes routes
+
+
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
