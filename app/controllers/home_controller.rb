@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
 #Controlador que administra las acciones de las paginas del frontend del portal
+
+  skip_before_filter :authenticate_user!
   
   def index
   end
