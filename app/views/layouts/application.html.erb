@@ -176,10 +176,26 @@ function MM_swapImage() { //v3.0
 </head>
 
 <body onLoad="MM_preloadImages('Images/photosover.jpg','Images/buttonsobreover.jpg')" bgcolor="#FFFFFF">
+
 <div align="center" style="width: 852; height: 775">
+
 <%= render :partial=>"/layouts/header" %>
+
+<% unless flash.empty? %>
+  <div class="flash">
+    <% flash.each do |name, message| %>
+      <div class="flash <%= name %>">
+        <%= message %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
 <%= yield %>
+
 <%= render :partial=>"/layouts/footer" %>
 </div>
+
 </body>
+
 </html>
