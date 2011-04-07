@@ -283,7 +283,7 @@ p {
   z-index: 3000;
 }
 
-.flash.error {
+.flash.error, .flash.alert {
   background-color: #b73618;
   border-color: #c95236;
 }
