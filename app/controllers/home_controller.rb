@@ -1,6 +1,4 @@
-
 class HomeController < ApplicationController
-  
 #Controlador que administra las acciones de las paginas del frontend del portal
   
   def index

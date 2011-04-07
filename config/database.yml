@@ -9,11 +9,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: saicapellanes_dev_development
+  database: saicapellanes_dev
   pool: 5
   username: root
   password:
-  socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,18 +21,16 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: saicapellanes_dev_test
+  database: saicapellanes_test
   pool: 5
   username: root
   password:
-  socket: /var/run/mysqld/mysqld.sock
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: saicapellanes_dev_production
+  database: saicapellanes_production
   pool: 5
   username: root
   password:
-  socket: /var/run/mysqld/mysqld.sock
