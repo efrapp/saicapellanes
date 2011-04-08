@@ -45,6 +45,8 @@ Saicapellanes::Application.routes.draw do
   match "products/elite_ingenicard", :to => "products#elite_ingenicard"
   match "products/tal_cash_ingenicard", :to => "products#tal_cash_ingenicard"
   match "products/tal_elite_visa_form", :to => "products#tal_elite_visa_form"
+  match "products/elite_ingenicard_form", :to => "products#elite_ingenicard_form"
+  match "products/tal_cash_ingenicard_form", :to => "products#tal_cash_ingenicard_form"
 
 
   # End Saicapellanes routes

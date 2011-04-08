@@ -17,4 +17,10 @@ class ProductsController < ApplicationController
   def tal_elite_visa_form
   end
 
+  def elite_ingenicard_form
+  end
+
+  def tal_cash_ingenicard_form
+  end
+
 end
