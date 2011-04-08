@@ -1,83 +1,64 @@
 class CategoriesController < ApplicationController
-  # GET /categories
-  # GET /categories.xml
-  def index
-    @categories = Category.all
+ 
+  layout "/layouts/members"
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @categories }
-    end
+    #Tarjetas
+  def cards
   end
 
-  # GET /categories/1
-  # GET /categories/1.xml
-  def show
-    @category = Category.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @category }
-    end
+  #Especiales a Medio Oriente
+  def travels
   end
 
-  # GET /categories/new
-  # GET /categories/new.xml
-  def new
-    @category = Category.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @category }
-    end
+  #Seguros
+  def insurance
   end
 
-  # GET /categories/1/edit
-  def edit
-    @category = Category.find(params[:id])
+  #Larga Distancia
+  def logn_distance
   end
 
-  # POST /categories
-  # POST /categories.xml
-  def create
-    @category = Category.new(params[:category])
-
-    respond_to do |format|
-      if @category.save
-        format.html { redirect_to(@category, :notice => 'Category was successfully created.') }
-        format.xml  { render :xml => @category, :status => :created, :location => @category }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @category.errors, :status => :unprocessable_entity }
-      end
-    end
+  #Licencia de conducir internacional
+  def int_driving_license
   end
 
-  # PUT /categories/1
-  # PUT /categories/1.xml
-  def update
-    @category = Category.find(params[:id])
-
-    respond_to do |format|
-      if @category.update_attributes(params[:category])
-        format.html { redirect_to(@category, :notice => 'Category was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @category.errors, :status => :unprocessable_entity }
-      end
-    end
+  #Credenciales de Identificacion
+  def id_credentials
   end
 
-  # DELETE /categories/1
-  # DELETE /categories/1.xml
-  def destroy
-    @category = Category.find(params[:id])
-    @category.destroy
+  #Fajas
+  def strips
+  end
 
-    respond_to do |format|
-      format.html { redirect_to(categories_url) }
-      format.xml  { head :ok }
-    end
+  #Haga su portal
+  def make_your_website
+  end
+
+  #Promociones Especiales Para Negocios
+  def business_promotions
+  end
+
+  #Programa de lealtad para comerciantes
+  def loyalty_program_merchants
+  end
+
+  #Sistema administrativo para organizaciones sin fines de lucro
+  def admin_system_nonprofit_orgs
+  end
+
+  #Registro de organizaciones sin fines de lucro
+  def nonprofit_orgs_register
+  end
+
+  #Registros negocios asociados
+  def partners_business_register
+  end
+
+  #Programa de lealtad para socios
+  def loyalty_program_partners
+  end
+
+  #programa de incentivos
+  def incentive_program
   end
 end

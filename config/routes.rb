@@ -1,8 +1,4 @@
 Saicapellanes::Application.routes.draw do
-  resources :categories
-
-  resources :products
-
   devise_for :users
 
   # The priority is based upon order of creation:
@@ -27,21 +23,29 @@ Saicapellanes::Application.routes.draw do
   match "members/about_us", :to => "members#about_us"
   match "members/what_is_it_about", :to => "members#what_is_it_about"
   match "members/strategies_for_success", :to => "members#strategies_for_success"
-  match "members/cards", :to => "members#cards"
-  match "members/travels", :to => "members#travels"
-  match "members/insurance", :to => "members#insurance"
-  match "members/logn_distance", :to => "members#logn_distance"
-  match "members/int_driving_license", :to => "members#int_driving_license"
-  match "members/id_credentials", :to => "members#id_credentials"
-  match "members/strips", :to => "members#strips"
-  match "members/make_your_website", :to => "members#make_your_website"
-  match "members/business_promotions", :to => "members#business_promotions"
-  match "members/loyalty_program_merchants", :to => "members#loyalty_program_merchants"
-  match "members/admin_system_nonprofit_orgs", :to => "members#admin_system_nonprofit_orgs"
-  match "members/nonprofit_orgs_register", :to => "members#nonprofit_orgs_register"
-  match "members/partners_business_register", :to => "members#partners_business_register"
-  match "members/loyalty_program_partners", :to => "members#loyalty_program_partners"
-  match "members/incentive_progrma", :to => "members#incentive_progrma"
+  
+  match "categories/cards", :to => "categories#cards"
+  match "categories/travels", :to => "categories#travels"
+  match "categories/insurance", :to => "categories#insurance"
+  match "categories/logn_distance", :to => "categories#logn_distance"
+  match "categories/int_driving_license", :to => "categories#int_driving_license"
+  match "categories/id_credentials", :to => "categories#id_credentials"
+  match "categories/strips", :to => "categories#strips"
+  match "categories/make_your_website", :to => "categories#make_your_website"
+  match "categories/business_promotions", :to => "categories#business_promotions"
+  match "categories/loyalty_program_merchants", :to => "categories#loyalty_program_merchants"
+  match "categories/admin_system_nonprofit_orgs", :to => "categories#admin_system_nonprofit_orgs"
+  match "categories/nonprofit_orgs_register", :to => "categories#nonprofit_orgs_register"
+  match "categories/partners_business_register", :to => "categories#partners_business_register"
+  match "categories/loyalty_program_partners", :to => "categories#loyalty_program_partners"
+  match "categories/incentive_progrma", :to => "categories#incentive_progrma"
+
+  match "products/americas_cards_visa", :to => "products#americas_cards_visa"
+  match "products/tal_elite_visa", :to => "products#tal_elite_visa"
+  match "products/elite_ingenicard", :to => "products#elite_ingenicard"
+  match "products/tal_cash_ingenicard", :to => "products#tal_cash_ingenicard"
+  match "products/tal_elite_visa_form", :to => "products#tal_elite_visa_form"
+
 
   # End Saicapellanes routes
 
