@@ -185,7 +185,7 @@ function MM_swapImage() { //v3.0
   <div class="flash">
     <% flash.each do |name, message| %>
       <div class="flash <%= name %>">
-        <%= message %>
+        <%= message.html_safe %>
       </div>
     <% end %>
   </div>
