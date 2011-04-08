@@ -1,22 +1,5 @@
 <body bgcolor="#ffffff">
 
-<!-- did not now where to start the form so i might as well just do it up here.. ~FBM -->
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <p><%= f.label :email, "Email / ID del Usuario *:" %></p>
-  <p><%= f.text_field :email %></p>
-
-  <p><%= f.label :password, "Contraseña:" %></p>
-  <p><%= f.password_field :password %></p>
-
-  <p><%= f.label :password_confirmation, "Re-introduzca su contraseña:" %></p>
-  <p><%= f.password_field :password_confirmation %></p>
-
-  <p><%= f.submit "Registrarse" %></p>
-<% end %>
-<%= render :partial => "devise/shared/links" %>
-
 <div aling="center" style="">
 <table cellspacing="0" cellpadding="0" border="0" width="850" class="style25">
     <tbody><tr>
@@ -29,7 +12,7 @@
   </tbody>
 </table>
 
-<% %>
+<!-- BEGIN OF BIG ASS TABLE -->
 <table cellspacing="0" cellpadding="0" border="0" width="850" class="">
     <tbody><tr>
       <td width="600" valign="top" height="319" class="" rowspan="2"><table cellspacing="0" cellpadding="0" border="0" width="550">
@@ -94,19 +77,18 @@
             <td height="14" colspan="2">&nbsp;</td>
           </tr>
           <tr>
-            
-            <!-- HELLOOOOOOOOOOOO -->
-            
             <td align="left" height="14" colspan="2"><strong>Desde  hoy Usted es nuestro asociado, desde hoy usted tiene su propio negocio.</strong></td>
           </tr>
           <tr>
             <td height="14" colspan="2">&nbsp;</td>
           </tr>
+          
           <tr>
             <td align="left" height="14" colspan="2"><label>
               <input type="checkbox" id="checkbox2" name="checkbox2">
             <span class="style29"><strong> $230</strong></span></label></td>
           </tr>
+          
           <tr>
             <td align="left" height="14" colspan="2"><img width="269" height="172" src="/images/1-elitenterate.jpg"></td>
           </tr>
@@ -213,16 +195,22 @@
           <tr>
             <td bgcolor="#ffffff" height="19" class="style37" colspan="2">&nbsp;</td>
           </tr>
+          
+          <!-- BEGINNING OF SECTION 1 -->
+          
           <tr>
             <td bgcolor="#006600" height="30" class="style37" colspan="2">1. Información personal básica</td>
           </tr>
+          
           <tr>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
+          
           <tr>
             <td align="left"><form action="" method="post" name="form1">
-              <label><span class="style30"><strong>Enter@te PromoCode *</strong></span>
+                
+                <span class="style30"><strong>Enter@te PromoCode *</strong></span>
                 <input type="text" id="textfield" name="textfield">
                 <br>
                 <br>
@@ -235,7 +223,7 @@
                 <input type="text" id="textfield3" name="textfield3">
                 <br>
                 <br>
-                </label>
+                
               <table cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tbody><tr>
                   <td width="55"><p class="style30"><strong>Sexo*:</strong></p></td>
@@ -565,7 +553,7 @@
                   </tr>
                 </tbody></table>
               <label>              <br>
-                <strong class="style30">Códogo Postal*</strong>:
+                <strong class="style30">Código Postal*</strong>:
                 <input type="text" id="textfield4" name="textfield4">
                 <br>
                 </label>
@@ -593,69 +581,81 @@
                 </tr>
             </tbody></table></td>
           </tr>
+          
           <tr>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
+          
           <tr>
             <td bgcolor="#006600" height="26" colspan="2"><span class="style37">2. Acceso al Sistema</span></td>
           </tr>
+          
           <tr>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
-          <tr>
-            <td align="left"><form action="" method="post" name="form2">
-              <label><strong class="style30">Email / ID del Usuario *:</strong>
-                <input type="text" id="textfield5" name="textfield5">
+          
+          <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+            
+            <tr><td><%= devise_error_messages! %></td></tr>
+            
+            <tr>
+              <td align="left">
+                <label>
+                  <strong class="style30"><%= f.label :email, "Email / ID del Usuario *:" %></strong>
+                  <input type="text" size="20" name="user[email]" id="user_email">
                 </label>
-            </form></td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td align="left"><form action="" method="post" name="form3">
-              <label><strong class="style30">Contraseña *:</strong>
-                <input type="text" id="textfield6" name="textfield6">
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+            
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            
+            <tr>
+              <td align="left">
+                <label>
+                  <strong class="style30"><%= f.label :password, "Contraseña *:" %></strong>
+                  <input type="password" size="20" name="user[password]" id="user_password">
                 </label>
-            </form></td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td align="left" colspan="2"><form action="" method="post" name="form4">
-              <label><strong class="style30">Re-introduzca<br>
-                su contraseña * :
-                </strong>
-                <input type="text" id="textfield7" name="textfield7">
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+            
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            
+            <tr>
+              <td align="left">
+                <label>
+                  <strong class="style30"><%= f.label :password_confirmation, "Re-introduzca<br>su contraseña *:".html_safe %></strong>
+                  <input type="password" size="20" name="user[password_confirmation]" id="user_password_confirmation">
                 </label>
-            </form></td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-<div id="sec3">
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+            
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            
+            <tr><td><%= f.submit "Registrarse" %></td></tr>
+            
+          <% end %>
           
           <!-- SECCION 3 DE PREGUNTAS -->
           
-          <tr>
-            <td align="left">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-          </tr>
-          <tr>
-            <td align="left" colspan="2">&nbsp;</td>
-          </tr>
       </tbody></table></td>
-</div>
+
       <td valign="top">&nbsp;</td>
     </tr>
+    
     <tr>
       <td bgcolor="#ffffff" valign="top" height="2562"><table cellspacing="0" cellpadding="0" border="0" width="252">
         <tbody><tr>
