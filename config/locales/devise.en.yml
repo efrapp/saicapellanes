@@ -1,36 +1,36 @@
 en:
   errors:
     messages:
-      not_found: "not found"
-      already_confirmed: "was already confirmed"
-      not_locked: "was not locked"
+      not_found: "no se encontr&oacute;"
+      already_confirmed: "ya fue confirmado"
+      not_locked: "no se encontraba en bloqueo"
 
   devise:
     failure:
-      unauthenticated: 'You need to sign in or sign up before continuing.'
-      unconfirmed: 'You have to confirm your account before continuing.'
-      locked: 'Your account is locked.'
-      invalid: 'Invalid email or password.'
-      invalid_token: 'Invalid authentication token.'
-      timeout: 'Your session expired, please sign in again to continue.'
-      inactive: 'Your account was not activated yet.'
+      unauthenticated: 'Debe accesar o registrarse para poder continuar.'
+      unconfirmed: 'Debe confirmar su cuenta para poder continuar.'
+      locked: 'Cuenta bloqueada.'
+      invalid: 'Email o contraseña inv&aacute;lidos.'
+      invalid_token: 'C&oacute;digo de autenticaci&oacute;n inv&aacute;lido.'
+      timeout: 'Su sesi&oacute;n ha caducado, por favor re-inicie su sesi&oacute;n para poder continuar.'
+      inactive: 'Su cuenta no ha sido activada a&uacute;n.'
     sessions:
-      signed_in: 'Signed in successfully.'
-      signed_out: 'Signed out successfully.'
+      signed_in: 'Inicio de sesi&oacute;n exitoso.'
+      signed_out: 'Sesi&oacute;n terminada.'
     passwords:
-      send_instructions: 'You will receive an email with instructions about how to reset your password in a few minutes.'
-      updated: 'Your password was changed successfully. You are now signed in.'
+      send_instructions: 'Ud. recibir&aacute; un correo con instrucciones para resetear su contraseña en unos minutos.'
+      updated: 'Contraseña cambiada con &eacute;xito. Sesi&oacute;n iniciada.'
     confirmations:
-      send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
-      confirmed: 'Your account was successfully confirmed. You are now signed in.'
+      send_instructions: 'Ud. recibir&aacute; un correo con instrucciones para confirmar su contraseña en unos minutos.'
+      confirmed: 'Cuenta confirmada con &eacute;xito. Sesi&oacute;n iniciada.'
     registrations:
-      signed_up: 'You have signed up successfully. If enabled, a confirmation was sent your e-mail.'
-      updated: 'You updated your account successfully.'
-      destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
+      signed_up: 'Ud. ha iniciado sesi&oacute;n exitosamente. Un correo de confirmaci&oacute;n fue enviado a su email.'
+      updated: 'Cuenta actualizada exitosamente.'
+      destroyed: 'Adi&oacute;s! Su cuenta fue cancelada exitosamente. Esperamos verlo de nuevo pronto.'
     unlocks:
-      send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
-      unlocked: 'Your account was successfully unlocked. You are now signed in.'
+      send_instructions: 'Ud. recibir&aacute; un correo con instrucciones acerca de como desbloquear su cuenta en unos minutos.'
+      unlocked: 'Cuenta exitosamente desbloqueada. Sesi&oacute; iniciada.'
     mailer:
-      confirmation_instructions: 'Confirmation instructions'
-      reset_password_instructions: 'Reset password instructions'
-      unlock_instructions: 'Unlock Instructions'
+      confirmation_instructions: 'Instrucciones de confirmaci&oacute;n'
+      reset_password_instructions: 'Instrucciones de cambio de contraseña'
+      unlock_instructions: 'Instrucciones de desbloqueo'
