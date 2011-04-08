@@ -2,25 +2,25 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: saicapellanes_dev_development
+  database: saicapellanes_dev
   pool: 5
   username: root
-  password: '1234'
+  password: 
 
 test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: saicapellanes_dev_test
+  database: saicapellanes_dev
   pool: 5
   username: root
-  password: '1234'
+  password: 
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: saicapellanes_dev_production
+  database: saicapellanes_dev
   pool: 5
   username: root
-  password: '1234'
+  password: 
