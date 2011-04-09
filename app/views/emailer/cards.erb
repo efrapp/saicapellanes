@@ -99,17 +99,17 @@
                         <td class="for_label">Entre el código o <br />
                           nombre de quien
                           lo indicó:</td>
-                        <td class="for_field"><%= @message[:contact_information][:promo_code]%></td>
+                        <td class="for_field"><%= @message[:vendor_information][:promo_code]%></td>
                       </tr>
                       <tr>
                       </tr>
                       <tr>
                         <td class="for_label">Observación</td>
-                        <td class="for_field"><p><%= @message[:contact_information][:comment]%></p></td>
+                        <td class="for_field"><p><%= @message[:vendor_information][:comment]%></p></td>
                       </tr>
                       <tr>
                         <td class="for_label"> Newsletters </td>
-                        <td class="for_field"><%= @message[:contact_information][:newsletters]==1 ? "Si " : "No " %>deseo recibir emails con novedades. </td>
+                        <td class="for_field"><%= @message[:vendor_information][:newsletters]==1 ? "Si " : "No " %>deseo recibir emails con novedades. </td>
                       </tr>
                     </tbody>
                   </table>
