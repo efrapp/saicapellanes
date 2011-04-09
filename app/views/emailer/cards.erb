@@ -1,4 +1,3 @@
-<%= form_tag(emails_cards_mail_path, :method => "post") do %>
           <table width="412" height="159" border="0" cellpadding="0" cellspacing="0">
             <tr>
               <td height="53">&nbsp;</td>
@@ -10,11 +9,11 @@
                   <tbody>
                     <tr>
                       <td class="for_label" width="180"><span class="red">*</span> Nombre (First Name)</td>
-                      <td class="for_field"><input class="for_large" maxlength="50" name="name" id="name" value="" tabindex="1" title="Último Apellido" type="text" /></td>
+                      <td class="for_field"><%= @message[:personal_data][:name] %></td>
                     </tr>
                     <tr>
                       <td class="for_label" width="180"><span class="red">*</span>Apellido (Last Name)</td>
-                      <td class="for_field"><input class="for_large" maxlength="100" name="last_name" id="last_name"tabindex="2" title="Digite o seu sobrenome" value="" type="text" /></td>
+                      <td class="for_field"><%= @message[:personal_data][:last_name] %></td>
                     </tr>
                     <tr>
                       <td class="for_label" width="180"><span class="red">*</span> Sexo</td>
@@ -199,8 +198,5 @@
                     </tbody>
                   </table>
                 </fieldset>
-                <%= submit_tag("Enviar Solicitud") %>
-                
             </tr>
           </table>
-<% end %>
