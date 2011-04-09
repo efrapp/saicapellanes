@@ -47,6 +47,13 @@ Saicapellanes::Application.routes.draw do
   match "products/tal_elite_visa_form", :to => "products#tal_elite_visa_form"
   match "products/elite_ingenicard_form", :to => "products#elite_ingenicard_form"
   match "products/tal_cash_ingenicard_form", :to => "products#tal_cash_ingenicard_form"
+  match "products/travel1_form", :to => "products#travel1_form"
+  match "products/travel2_form", :to => "products#travel2_form"
+  match "products/travel3_form", :to => "products#travel3_form"
+  match "products/accident_insurance_form1", :to => "products#accident_insurance_form1"
+  match "products/accident_insurance_form2", :to => "products#accident_insurance_form2"
+  match "products/accident_insurance_form3", :to => "products#accident_insurance_form3"
+  match "products/accident_insurance_form4", :to => "products#accident_insurance_form4"
 
 
   # End Saicapellanes routes
