@@ -179,7 +179,11 @@ function MM_swapImage() { //v3.0
 
 <div align="center" style="width: 852; height: 775">
 
-<%= render :partial=>"/layouts/header" %>
+<% unless current_user %>
+  <%= render :partial=>"/layouts/header" %>
+<% else %>
+  <%= render :partial=>"/layouts/header_members" %>
+<% end %>
 
 <% unless flash.empty? %>
   <div class="flash">
@@ -194,6 +198,7 @@ function MM_swapImage() { //v3.0
 <%= yield %>
 
 <%= render :partial=>"/layouts/footer" %>
+
 </div>
 
 </body>

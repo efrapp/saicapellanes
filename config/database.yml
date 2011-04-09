@@ -1,53 +1,27 @@
-development:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: saicapellanes_dev
-  pool: 5
-  username: root
-  password: 
+ development:
+   adapter: mysql2
+   encoding: utf8
+   reconnect: false
+   database: saicapellanes_dev
+   pool: 5
+   username: root
+   password: 
+ 
+ test:
+   adapter: mysql2
+   encoding: utf8
+   reconnect: false
+   database: saicapellanes_dev
+   pool: 5
+   username: root
+   password: 
+ 
+ production:
+   adapter: mysql2
+   encoding: utf8
+   reconnect: false
+   database: saicapellanes_dev
+   pool: 5
+   username: root
+   password: 
 
-test:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: saicapellanes_test
-  pool: 5
-  username: root
-  password: 
-
-production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: saicapellanes_production
-  pool: 5
-  username: root
-  password: 
-
-# development:
-#   adapter: mysql2
-#   encoding: utf8
-#   reconnect: false
-#   database: saicapellanes_dev_development
-#   pool: 5
-#   username: root
-#   password: '1234'
-# 
-# test:
-#   adapter: mysql2
-#   encoding: utf8
-#   reconnect: false
-#   database: saicapellanes_dev_test
-#   pool: 5
-#   username: root
-#   password: '1234'
-# 
-# production:
-#   adapter: mysql2
-#   encoding: utf8
-#   reconnect: false
-#   database: saicapellanes_dev_production
-#   pool: 5
-#   username: root
-#   password: '1234'
