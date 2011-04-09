@@ -1,12 +1,16 @@
-<h2>Resend confirmation instructions</h2>
-
-<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <p><%= f.label :email %></p>
-  <p><%= f.text_field :email %></p>
-
-  <p><%= f.submit "Resend confirmation instructions" %></p>
-<% end %>
-
-<%= render :partial => "devise/shared/links" %>
+<br/>
+<div class="devise">
+  <br/>
+  <h2>Reenv&iacute;o de instrucciones para confirmar cuenta</h2>
+  <%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+    <br/>
+    <p><%= f.label :email %></p>
+    <p><%= f.text_field :email %></p>
+    <br/>
+    <p><%= f.submit "Reenviar" %></p>
+  <% end %>
+  <br/>
+  <%= render :partial => "devise/shared/links" %>
+  <br/>
+</div>
