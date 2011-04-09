@@ -1,0 +1,102 @@
+<%= form_tag(emails_travels_mail_path, :method => "post") do %>
+<h2>FORMULARIO  DE SOLICITUD </h2>
+<p>&nbsp;</p>
+<fieldset>
+<p>Para solicitar el viaje por favor llene el siguiente formulario con sus datos:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<form action="" method="post" name="form1" id="form1">
+  <p>
+    <label><strong>ORGANIZACIÓN: </strong>
+      <input type="text" size="40" id="organization" name="organization">
+    </label>
+  </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><strong>RESPONSABLE</strong>:</p>
+  <p>&nbsp;</p>
+  <p>
+    <label>Nombres:
+      <input type="text" id="name" name="name">
+    </label>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <label>Apellidos:
+      <input type="text" id="last_name" name="last_name">
+    </label>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <label>Dirección:
+      <input type="text" id="address" name="address">
+    </label>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <label>Ciudad:
+      <input type="text" size="15" id="city" name="city">
+    </label>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <label>Estado:
+      <input type="text" size="15" id="state" name="state">
+    </label>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <label>Teléfono:
+      <input type="text" size="10" id="cell_phone" name="cell_phone">
+    </label>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <label>correo:
+      <input type="text" id="email" name="email">
+    </label>
+  </p>
+  <p>&nbsp;</p>
+  <p>Indique la cantidad de personas que <br>
+    participarán del viaje:</p>
+  <p>&nbsp;</p>
+  <p><strong>CANTIDAD DE PERSONAS:</strong></p>
+  <p>&nbsp;</p>
+  <table width="200">
+    <tbody><tr>
+      <td><label>
+        <input type="radio"  value="10" name="quantity">
+        10 personas</label></td>
+    </tr>
+    <tr>
+      <td><label>
+        <input type="radio"  value="20" name="quantity">
+        20 personas</label></td>
+    </tr>
+    <tr>
+      <td><label>
+        <input type="radio" value="30" name="quantity">
+        30 personas</label></td>
+    </tr>
+    <tr>
+      <td><label>
+        <input type="radio" value="50" name="quantity">
+        50 personas</label></td>
+    </tr>
+  </tbody></table>
+  <p>&nbsp;</p>
+  <p>OBSERVACIONES:</p>
+  <p>
+    <label>
+      <textarea rows="5" cols="30" id="comment" name="comment"></textarea>
+    </label>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <label>
+      <%= submit_tag("Enviar Solicitud") %>
+    </label>
+  </p>
+  <p>&nbsp;</p>
+</fieldset>
+<% end %>
