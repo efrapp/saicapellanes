@@ -70,6 +70,7 @@ Saicapellanes::Application.routes.draw do
 
 
   match "emails/cards_mail", :to => "emails#cards_mail", :via => "post"
+  match "emails/travels_mail", :to => "emails#travels_mail", :via => "post"
   # End Saicapellanes routes
 
 
