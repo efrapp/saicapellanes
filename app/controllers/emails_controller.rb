@@ -7,7 +7,7 @@ class EmailsController < ApplicationController
 
   def travels_mail
     message = {:organization=>params[:organization], :responsable=>{:name=>params[:name], :last_name=>params[:last_name], :address=>params[:address], :city=>params[:city], :state=>params[:state], :cell_phone=>params[:cell_phone], :email=>params[:email] }, :quantity=>params[:quantity], :comment=>params[:comment]}
-    Emailer.deliver_travels("pedrazaj_24@hotmail.com", "Pedido Tarjeta", message);
+    Emailer.deliver_travels("pedrazaj_24@hotmail.com", "Pedido Viaje", message);
     redirect_to members_index_path
   end
 end
