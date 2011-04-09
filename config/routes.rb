@@ -69,7 +69,7 @@ Saicapellanes::Application.routes.draw do
   match "products/final_cost_insurance_form2", :to => "products#final_cost_insurance_form2"
 
 
-
+  match "emails/cards_mail", :to => "emails#cards_mail", :via => "post"
   # End Saicapellanes routes
 
 
