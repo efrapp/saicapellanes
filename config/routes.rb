@@ -54,6 +54,20 @@ Saicapellanes::Application.routes.draw do
   match "products/accident_insurance_form2", :to => "products#accident_insurance_form2"
   match "products/accident_insurance_form3", :to => "products#accident_insurance_form3"
   match "products/accident_insurance_form4", :to => "products#accident_insurance_form4"
+  match "products/value_access_guarantee_form1", :to => "products#value_access_guarantee_form1"
+  match "products/value_access_guarantee_form2", :to => "products#value_access_guarantee_form2"
+  match "products/value_access_guarantee_form3", :to => "products#value_access_guarantee_form3"
+  match "products/value_access_guarantee_form4", :to => "products#value_access_guarantee_form4"
+  match "products/value_med_form1", :to => "products#value_med_form1"
+  match "products/value_med_form2", :to => "products#value_med_form2"
+  match "products/value_garantee_plan_form1", :to => "products#value_garantee_plan_form1"
+  match "products/value_garantee_plan_form2", :to => "products#value_garantee_plan_form2"
+  match "products/value_garantee_plan_form3", :to => "products#value_garantee_plan_form3"
+  match "products/value_garantee_plan_form4", :to => "products#value_garantee_plan_form4"
+  match "products/travel_insurance_form1", :to => "products#travel_insurance_form1"
+  match "products/final_cost_insurance_form1", :to => "products#final_cost_insurance_form1"
+  match "products/final_cost_insurance_form2", :to => "products#final_cost_insurance_form2"
+
 
 
   # End Saicapellanes routes

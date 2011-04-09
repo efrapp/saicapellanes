@@ -82,10 +82,10 @@ class ProductsController < ApplicationController
   def travel_insurance_form1
   end
 
-  def final_expense_insurance_form1
+  def final_cost_insurance_form1
   end
 
-  def final_expense_insurance_form2
+  def final_cost_insurance_form2
   end
 
 
