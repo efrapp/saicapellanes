@@ -272,6 +272,10 @@ p {
 	text-align: left;
 }
 
+.devise {
+	margin-left:17em;
+}
+
 /*application flash messages*/
 .flash {
   line-height: 42px;
