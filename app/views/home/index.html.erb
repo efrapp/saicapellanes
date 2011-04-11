@@ -24,15 +24,14 @@
     </div></td>
   </tr>
   <tr>
-    <td bgcolor="#CCCCCC"><p class="style30">Bienvenido. Accese con su correo:
+    <td bgcolor="#CCCCCC"><p class="style30">Bienvenido. Accese con su correo:</p>
       
-        </p>
-      <form method="post" action="/users/sign_in">
-      <p>Correo:
-          <INPUT TYPE="text" NAME="palclave" SIZE=20 VALUE=""> 
-          <INPUT TYPE="submit" VALUE="Acceder"><br>
-      </p>
-    </FORM><br></td>
+    <p>Correo:
+      <INPUT TYPE="text" NAME="palclave" SIZE=20 VALUE=""> 
+      <INPUT TYPE="submit" onclick="location.href=' <%= new_user_session_path %>'" VALUE="Acceder"><br>
+    </p>
+      
+    <br></td>
   </tr>
 </table>
 <table width="850" border="0" cellspacing="0" cellpadding="0" class="style27">
