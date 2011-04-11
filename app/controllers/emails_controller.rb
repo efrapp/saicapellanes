@@ -10,4 +10,10 @@ class EmailsController < ApplicationController
     Emailer.deliver_travels("pedrazaj_24@hotmail.com", "Pedido Viaje", message);
     redirect_to members_index_path
   end
+
+  def insurance_mail
+    message = {:name=>params[:name], :age => params[:age], :email=>[:email], :phone=>[:phone], :address =>[:address]}
+    Emailer.deliver_insurance("efrapp@gmail.com", "Pedido Seguro", message);
+    redirect_to members_index_path
+  end
 end

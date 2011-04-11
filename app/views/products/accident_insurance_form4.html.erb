@@ -60,69 +60,9 @@
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td><form action="mail_segur_acc4.php"  method="post" >
-                    <table width="472" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#4B8FAE">
-                      <tr>
-                        <td width="468"><table width="470" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F0F0F0">
-                          <tr>
-                            <td height="47" colspan="3" align="center" class="FBG"><strong><span class="t">SOLICITUD SEGURO DE ACCIDENTE</span><br />
-                              Solicito información sobre  Seguros En Línea: Seguro de Accidente<br />
-                              contacte    con su representante de enter@te o llene la  solicitud.</strong></td>
-                          </tr>
-                          <tr>
-                            <td width="234">&nbsp;</td>
-                            <td width="15">&nbsp;</td>
-                            <td width="221">&nbsp;</td>
-                          </tr>
-                          <tr>
-                            <td align="right"><div align="right">
-                              <p>Nombres y Apellidos: </p>
-                            </div></td>
-                            <td>&nbsp;</td>
-                            <td><input name="nombre" id="nombre" type="text" size="35" /></td>
-                          </tr>
-                          <tr>
-                            <td align="right"><p>Edad:</p></td>
-                            <td>&nbsp;</td>
-                            <td><input name="edad" id="edad" type="text" size="10" /></td>
-                          </tr>
-                          <tr>
-                            <td align="right"><p align="right">Email: </p></td>
-                            <td>&nbsp;</td>
-                            <td><input name="email" id="email" type="text" size="35" /></td>
-                          </tr>
-                          <tr>
-                            <td align="left"><p>Telefono(s):</p></td>
-                            <td>&nbsp;</td>
-                            <td><input name="phone" id="phone" type="text" size="35" /></td>
-                          </tr>
-                          <tr>
-                            <td align="left"><div align="right">
-                              <p>Dirección: </p>
-                            </div></td>
-                            <td>&nbsp;</td>
-                            <td><input name="direccion" id="direccion" type="text" size="35" /></td>
-                          </tr>
-                          <tr>
-                            <td height="19" colspan="3" align="center" valign="middle">&nbsp;</td>
-                          </tr>
-                          <tr>
-                            <td height="19" colspan="3" align="center" valign="middle">Comentarios</td>
-                          </tr>
-                          <tr>
-                            <td height="72" colspan="3" align="center" valign="middle"><textarea id="des" rows="6" cols="40" name="des"></textarea></td>
-                          </tr>
-                          <tr>
-                            <td height="72" colspan="3" align="center" valign="middle"><p>
-                              <label>
-                                <div align="center">
-                                <input type="submit" name="submit" id="submit" value="Enviar Solicitud" />
-                              </label></td>
-                          </tr>
-                        </table></td>
-                      </tr>
-                    </table>
-                  </form></td>
+                  <td>
+                    <%=  render :partial => "products/insurance/insurance_form" %>
+                  </td>
                 </tr>
                 <tr>
                   <td>&nbsp;</td>
